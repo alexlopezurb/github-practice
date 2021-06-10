@@ -2,14 +2,36 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: arial;
 }
 
-body {
-  background-color: beige;
-}
-
-h1 {
+header {
+  font-size: 30px;
+  background-color: blue;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 h2 {
